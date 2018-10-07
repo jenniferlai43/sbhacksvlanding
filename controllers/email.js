@@ -8,16 +8,18 @@ module.exports = function(app) {
 	});
 
 	app.post('/email', (req, res) => {
+		console.log(req.body.email);
 		Email.create({
 			email: req.body.email
 		}, (err, email) => {
+			console.log()
 			if (err)
 			{
-				console.log(err);
+				res.send({'error': 'An error has occurred'});
 			}
 			else
 			{
-				res.send("email saved to db");
+				res.json(email);
 			}
 		});
 	});
