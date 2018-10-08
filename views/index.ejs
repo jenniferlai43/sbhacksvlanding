@@ -16,15 +16,16 @@
       
   		<form class = "flex-container">
   			<input id="email_input" class = "input-line" type = "email" placeholder="Enter Email for Notifications..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email for Notifications...'" required />
-  			<button class='submit' id = "email_submit" type = "submit" value = "submit" >Submit</button>
+  			<button class='submit' id = "email_submit" type = "submit" value = "submit" onclick="printSubmitted()" >Submit</button>
           </form>
     </div>
     </body>
     <script>
       function printSubmitted()
       {
-        this.placeholder = "Added email to mailing list!";
-        setTimeout(function(){ this.placeholder = ("Enter Email for Notifications..."); }, 1500);
+        var email_input = document.getElementById('email_input');
+        email_input.placeholder = "Added email to mailing list!";
+        setTimeout(function(){ email_input.placeholder = "Enter Email for Notifications..."; }, 1500);
       }
     </script>
 </html>
