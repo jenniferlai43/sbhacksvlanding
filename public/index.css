@@ -149,7 +149,7 @@ img
   /* start of phone styles */
   .center
   {
-    width: 70%;
+    width: 100%;
   }
   .input-line
   {
@@ -158,6 +158,6 @@ img
   }
   body
   {
-    font-size:35px;
+    font-size: 11vw;
   }
 }
