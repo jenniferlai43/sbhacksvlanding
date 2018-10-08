@@ -4,7 +4,7 @@ $(document).ready(() => {
 		$('#email_input').val("");
 	}
 
-	$('#email_submit').on('click', (e) =>{
+	$('form').on('submit', (e) =>{
 		e.preventDefault();
 		var email_input = $('#email_input');
 		var email = {email: email_input.val()};

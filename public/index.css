@@ -1,21 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
 body{
   background: rgb(26,36,74);
   background: linear-gradient(90deg, rgba(26,36,74,1) 21%, rgba(22,10,54,1) 100%);
+  height: 100vh;
+  font-size:6vw;
 }
 html {
   margin: 0;
   height: 100%;
 }
-.info{
+h2 {
   font-family: roboto;
   font-weight: 300;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: roboto;
+  font-weight: 150;
+  font-size: 0.8em;
+  font-family: roboto;
 }
 .flex-container{
+  padding: 10px 0px;
   display: flex;
   align-items:center;
   justify-content:center;
-  height: 20vh;
 }
 input {
   border: none;
@@ -30,8 +52,7 @@ input {
   font-weight: 300;
   letter-spacing: 0px;
   letter-spacing: 0.02rem;
-  font-size: 10px;
-  font-size: 1.0rem;
+  font-size: 0.25em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.65);
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -44,7 +65,7 @@ input {
   transition: all .2s ease;
 }
 
-.ghost-round {
+.submit {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 0px;
@@ -56,15 +77,21 @@ input {
   line-height: 2.5em;
   margin-left: 10px;
   margin-bottom: 10px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  padding: 0 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-.ghost-round:hover {
+.submit:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.submit:focus
+{
+  outline: none;
 }
 
 .full-width {
@@ -76,8 +103,19 @@ input {
 }
 
 .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
 }
+
+.content
+{
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
