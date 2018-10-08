@@ -153,7 +153,8 @@ img
   }
   .input-line
   {
-    width: 45%;
+    width: 55%;
+    font-size: 0.32em;
   }
   body
   {
