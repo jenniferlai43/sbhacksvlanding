@@ -13,24 +13,30 @@
        <h3 align= "center" class="info" style = "color:white">Corwin Pavilion</h2> 
       
   		<form class = "flex-container">
-  			<input id="email_input" class = "input-line" type = "email" placeholder="Enter Email for Notifications..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email for Notifications...'" required />
-        <button class='submit' id = "email_submit" type = "submit" value = "submit" onclick="printSubmitted();" >
+  			<input id="email_input" name = "email_input" class = "input-line" type = "email" placeholder="Enter Email for Notifications..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email for Notifications...'" required />
+        <button class='submit' id = "email_submit" type = "submit" value = "submit" >
             <p id = "submit_text">Submit</p>
             <svg id = "check" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" style = "display:none;">
               <circle class="path circle" fill="none" stroke="white" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
               <polyline class="path check" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
             </svg>
+            <svg id = "error" class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" style="display:none;">
+              <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+              <path class="checkmark__check" fill="none" d="M16 16 36 36 M36 16 16 36" />
+            </svg>
+
         </button>
       </form>
     </div>
     </body>
     <script>
+      /*
       function printSubmitted()
       {
         var email_input = document.getElementById('email_input');
         email_input.placeholder = "Added email to mailing list!";
         setTimeout(function(){ email_input.placeholder = "Enter Email for Notifications..."; }, 2000);
       }
-
+    */
     </script>
 </html>
