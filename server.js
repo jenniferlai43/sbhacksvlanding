@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+
 
 const db = require('./config/db.js'); //insert path to database here, add gitignore for that folder
 
