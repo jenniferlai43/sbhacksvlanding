@@ -8,6 +8,7 @@ module.exports = function(app) {
 	});
 
 	app.post('/email', (req, res) => {
+		/*
 		Email.find({email: req.body.email}, (err, emailAddresses) =>
 		{
 			if (emailAddresses.length)
@@ -32,6 +33,20 @@ module.exports = function(app) {
 				});
 			}
 		});
+		*/
+		Email.create({
+					email: req.body.email
+				}, (err, email) => {
+					if (err)
+					{
+						//res.send({'error': 'An error has occurred'});
+						res.status(404).send({message: 'duplicate'});
+					}
+					else
+					{
+						res.json(email);
+					}
+				});
 		
 	});
 }
