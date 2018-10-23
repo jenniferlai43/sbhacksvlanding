@@ -1,5 +1,5 @@
 $(document).ready(() => {
-	console.log("in ajax");
+
 
 	function resetForm(){
 		$('#email_input').val("");
@@ -62,13 +62,11 @@ $(document).ready(() => {
 			url: '/email',
 			data: email,
 			success: ((response)=>{
-				console.log("in success");
 				resetForm();
 				cssLoader();
 				emailSuccess();
 			}),
 			error: ((xhr, status, error)=>{
-				console.log("in error");
 				//alert(xhr.responseJSON.message);
 				resetForm();
 				cssLoaderError();
