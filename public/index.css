@@ -26,12 +26,13 @@ h2 {
   font-weight: 300;
   line-height: 1.5;
   margin-top: -50px;
+  font-size: 0.8em;
 }
 
 h3 {
   font-family: roboto;
   font-weight: 150;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-family: roboto;
 }
 .flex-container{
@@ -112,8 +113,8 @@ input {
   display: block;
   background-image: url("/logo600px.png");
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 65vh;
+  height: 65vh;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
