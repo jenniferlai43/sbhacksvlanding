@@ -25,7 +25,6 @@ h2 {
   font-family: roboto;
   font-weight: 300;
   line-height: 1.5;
-  margin-top: -50px;
   font-size: 0.8em;
 }
 
@@ -113,8 +112,8 @@ input {
   display: block;
   background-image: url("/logo600px.png");
   background-position: center;
-  width: 65vh;
-  height: 65vh;
+  width: 55vh;
+  height: 55vh;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -275,13 +274,8 @@ svg {
   /* start of phone styles */
   .logo
   {
-    background-image: url("/logo600px.png");
     width: 250px;
     height: 250px;
-  }
-  h2
-  {
-    margin-top: -30px;
   }
 
   .input-line
