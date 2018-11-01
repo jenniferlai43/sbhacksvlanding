@@ -1,3 +1,3 @@
 module.exports = {
-	url: process.env.MONGODB_URI //insert url for db here
+	url: process.env.MONGODB_URI || "mongodb://localhost/emails"
 };
