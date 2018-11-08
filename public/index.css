@@ -10,6 +10,11 @@
   vertical-align: baseline;
 }
 
+a
+{
+  text-decoration: none;
+}
+
 
 body{
   /*background: rgb(26,36,74);
@@ -33,13 +38,13 @@ h3 {
   font-family: roboto;
   font-weight: 150;
   font-size: 40px;
-  font-family: roboto;
 }
 .flex-container{
   padding: 10px 0px;
   display: flex;
   align-items:center;
   justify-content:center;
+  margin-bottom: 25px;
 }
 input {
   border: none;
@@ -118,6 +123,20 @@ input {
   margin-bottom: 40px;
 }
 
+.past-info
+{
+  display: flex;
+  justify-content: center;
+}
+
+#more-info
+{
+  height: 25px;
+  line-height: 0px;
+  font-size: 12px;
+  width: 180px;
+  border-radius: 40px;
+}
 
 img
 {
@@ -267,30 +286,29 @@ svg {
 
   .input-line
   {
-    width: 45%;
-  }
-  body
-  {
-    font-size:50px;
+    width: 250px;
   }
 }
 
 @media screen and (max-width: 479px) {
   /* start of phone styles */
+  h2
+  {
+    font-size: 45px
+  }
+  h3
+  {
+    font-size: 35px;
+  }
   .logo
   {
-    width: 3em;
-    height: 3em;
+    width: 150px;
+    height: 150px;
   }
-
   .input-line
   {
-    width: 55%;
-    font-size: 0.32em;
-  }
-  body
-  {
-    font-size: 10vw;
+    width: 200px;
+    font-size: 13px;
   }
 }
 
